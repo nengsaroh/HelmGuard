@@ -1,0 +1,527 @@
+:root {
+   --primary: #6c919c;
+
+   --bg: #30404e;
+}
+
+* {
+
+   margin: 0;
+
+   padding: 0;
+
+   box-sizing: border-box;
+
+   outline: none;
+
+   border: none;
+
+   text-decoration: none;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   background-color: var(--bg);
+   color: #fff;
+   min-height: 3000px;
+}
+
+/* Navbar Start */
+.navbar {
+
+   display: flex;
+
+   justify-content: space-between;
+
+   align-items: center;
+
+   padding: 1.4rem 7%;
+
+   background-color: rgba(134, 117, 93, 0.8);
+
+   border-bottom: 1px solid var(--primary);
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 9999;
+
+}
+
+.navbar .navbar-logo {
+
+   font-size: 3rem;
+
+   font-weight: 700;
+
+   color: #fff;
+
+   font-style: italic;
+}
+
+.navbar .navbar-nav a {
+
+   color: #fff;
+
+   display: inline-block;
+
+   font-size: 1.3rem; 
+
+   margin: 0 1rem;
+}
+ 
+.navbar .navbar-nav a:hover {
+
+   color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+
+   content: '';
+
+   display: block;
+
+   padding-bottom: 0.5rem;
+
+   border-bottom: 0.1rem solid var(--primary);
+
+   transform: scaleX(0);
+
+   transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+
+   transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+
+   color: #fff;
+
+   margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+
+   color: var(--primary);
+}
+
+#humberger-menu {
+
+   display: none;
+}
+
+/* Hero Section */
+.hero {
+
+   min-height: 100vh;
+
+   display: flex;
+
+   align-items: center;
+
+   background-image: url('../img/image-bg.jpg');
+
+   background-repeat: no-repeat;
+
+   background-size: cover;
+
+   background-position: center;
+
+   position: relative;
+}
+
+.hero::after {
+
+   content: '';
+
+   display: block;
+
+   position: absolute;
+
+   width: 100%;
+
+   height: 30%;
+
+   bottom: 0;
+
+   background: linear-gradient(0deg, rgb(49, 66, 73) 8%, rgba(26, 57, 99, 0) 50%);
+}
+
+
+.hero .content {
+   padding: 1.4rem 7%;
+   max-width: 60rem;
+}
+
+.hero .content h1 {
+
+   font-size: 3em;
+
+   color: #ffffff;
+
+   text-shadow: 1px 1px 3px rgb(0, 89, 172);
+}
+
+
+.hero .content h1 span {
+
+   color: var(--primary);
+}
+
+.hero .content p {
+
+   font-size: 1.6rem;
+
+   margin-top: 1rem;
+
+   line-height: 1.4;
+
+   color: #ffffff;
+
+   text-shadow: 1px 1px 3px rgb(0, 89, 172);
+}
+
+.hero .content .cta {
+
+   margin-top: 1rem;
+
+   display: inline-block;
+
+   padding: 1rem 3rem;
+
+   font-size: 1.4rem;
+
+   color: #fff;
+
+   background-color: var(--primary);
+
+   border-radius: 0.5rem;
+
+   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/* Hero End */
+
+/* About Section */
+
+.about, .our-team {
+   padding: 8rem 7% 1.4rem;
+
+}
+
+.about h2, .our-team h2 {
+
+   text-align: center;
+
+   font-size: 2.6rem;
+
+   margin-bottom: 3rem;
+}
+
+.about .row {
+
+   display: flex;
+
+}
+
+.about .row .about-img {
+
+   flex: 1 1 45rem;
+
+}
+
+.about .row .about-img img {
+
+   width: 100%;
+}
+
+.about .row .content {
+
+   flex: 1 1 35rem;
+
+   padding: 0 1rem;
+}
+
+.about .row .content h3 {
+
+   font-size: 1.8rem;
+
+   margin-bottom: 1rem;
+}
+
+.about .row .content p {
+
+   margin-bottom: 0.8rem;
+
+   font-size: 1.4rem;
+
+   font-weight: 100;
+
+   line-height: 1.6;
+}
+
+
+/* About Section End */
+
+/* Our Team Section */
+.our-team h2 {
+
+   margin-bottom: 1rem;
+}
+.our-team p {
+
+   text-align: center;
+   
+   max-width: 30rem;
+
+   margin: auto;
+
+   font-weight: 100;
+
+   line-height: 1.6;
+}
+
+
+.our-team .row {
+
+   display: flex;
+
+   flex-wrap: wrap;
+
+   margin-top: 5rem;
+
+   justify-content: center;
+}
+
+.our-team .row .team-card {
+   padding: 10px;
+   text-align: center;
+}
+
+.our-team .row .team-card img {
+   border-radius: 100%;
+   width: 150px;
+   height: 150px;
+   object-fit: cover;
+}
+
+.our-team .row .team-card .team-card-title {
+   margin-top: 1rem auto 0.5rem;
+}
+
+/* Our Team Section End */
+
+/* Type of Helmet Section */
+
+.type, .type {
+   padding: 8rem 7% 1.4rem;
+
+}
+
+.type h2, .type h2 {
+
+   text-align: center;
+
+   font-size: 2.6rem;
+
+   margin-bottom: 3rem;
+}
+
+.type h3, .type h3 {
+
+   text-align: center;
+
+   font-size: 1.8rem;
+
+   margin-bottom: 1rem;
+}
+
+.type .container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 3rem;
+   margin-bottom: 1rem;
+   
+}
+
+.type .helmet-img {
+   width: 200px;
+   height: 200px;
+   object-fit: cover;
+}
+
+/* Type of Helmet Section End */
+
+/* Regulation Section */
+.help-center, .help-center {
+   padding: 8rem 7% 1.4rem;
+
+}
+
+.help-center h2, .help-center h2 {
+
+   text-align: center;
+
+   font-size: 2.6rem;
+
+   margin-bottom: 3rem;
+}
+
+
+ .faq-container {
+   max-width: 800px;
+   margin: 20px auto;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ h1 {
+   text-align: center;
+   font-size: 2rem;
+   color: #333;
+   margin-bottom: 20px;
+ }
+ 
+ /* Styling for each FAQ item */
+ .faq-item {
+   margin-bottom: 15px;
+ }
+ 
+ .faq-question {
+   width: 100%;
+   padding: 15px;
+   text-align: left;
+   background-color: rgba(134, 117, 93, 0.8);
+   color: white;
+   font-size: 1.1rem;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .faq-question:hover {
+   background-color: #2c4157;
+ }
+ 
+ .faq-answer {
+   display: none; /* Hidden by default */
+   padding: 15px;
+   background-color: #0c0c0c;
+   border-left: 5px solid #2c4157;
+   border-radius: 0 0 5px 5px;
+   margin-top: 5px;
+ }
+ 
+ /* Optional: Styling for expanded answers */
+ .faq-answer.show {
+   display: block;
+ }
+/* faq end */
+ 
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+   html {
+
+      font-size: 75%;
+   }
+   }
+
+/* Tablet */
+@media (max-width: 768px) {
+   html {
+
+      font-size: 62.5%;
+   }
+
+   #humberger-menu {
+
+      display: inline-block;
+   }
+
+   .navbar .navbar-nav {
+
+      position: absolute;
+
+      top: 100%;
+
+      right: -100%;
+
+      background-color: #fff;
+
+      width: 30rem;
+
+      height: 100vh;
+   }
+
+   .navbar .navbar-nav.active {
+
+      right: 0;
+   }
+
+   .navbar .navbar-nav a {
+
+      color: var(--bg);
+
+      display: block;
+
+      margin: 1.5rem;
+
+      padding: 0.5rem;
+
+      font-size: 2rem;
+   }
+
+   .navbar .navbar-nav a::after {
+
+      transform-origin: 0 0;
+   }
+
+   .navbar .navbar-nav a:hover::after {
+
+      transform: scaleX(0.2);
+   }
+
+   .about .row {
+
+      flex-wrap: wrap;
+   }
+
+   .about .row .about-img img {
+
+      height: 24rem;
+      object-fit: contain;
+      margin: 0 auto;
+   }
+
+   .about .row .content {
+
+      padding: 0;
+   }
+
+   .about .row .content h3 {
+
+      margin-top: 1rem;
+      font-size: 2rem;
+   }
+
+   .about .row .content p {
+
+      font-size: 1.6rem;
+   }
+   }
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+   html {
+
+      font-size: 55%;
+   }
+   }
